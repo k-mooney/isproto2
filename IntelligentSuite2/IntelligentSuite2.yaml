@@ -1,0 +1,19 @@
+!<suite>
+note:
+  simple suite
+steps:
+  !<do> '#java-maven-junit-helloworld'
+  !<do> '#java-maven-junit-helloworld(2)'
+
+macros:
+  java-maven-junit-helloworld:
+    - !<execute>
+      note: execute java-maven-junit-helloworld
+      type: junit
+      image: tp-docker-dev-local.us-artifactory1.nonprod.hclpnp.com/hcl-onetest/server-junit-execution:10.2.1
+      args:
+        mvn
+        clean
+        surefire-report:report
+        site
+        -DgenerateReports=false
