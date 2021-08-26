@@ -9,11 +9,4 @@ macros:
   java-maven-junit-helloworld:
     - !<execute>
       note: execute java-maven-junit-helloworld
-      type: junit
-      image: tp-docker-dev-local.us-artifactory1.nonprod.hclpnp.com/hcl-onetest/server-junit-execution:10.2.1
-      args:
-        mvn
-        clean
-        surefire-report:report
-        site
-        -DgenerateReports=false
+      testAsset: {assetId=8dcebf8d-d8c2-446e-8ebf-8dd8c2346e2f, revision=master, requestedVersion=null}
