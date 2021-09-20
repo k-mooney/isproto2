@@ -9,4 +9,4 @@ macros:
   java-maven-junit-helloworld:
     - !<execute>
       note: execute java-maven-junit-helloworld
-      testAsset: {assetId=4e7ab484-d794-44b1-bab4-84d79404b196, revision=master, projectId=1700, requestedVersion=null}
+      testAsset: {assetId=c71abec2-cb72-49cc-9abe-c2cb72c9cce9, revision=master, projectId=3050, requestedVersion=null}
